@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" 
+  integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <!-- QUICK SAND FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link rel="stylesheet" href="contact.css">
+  <title>Bharmavathu Balasai</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">BALASAI</a>
+    
+        <i class='bx bx-menu' id="menu-icon"></i>
+       
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="profile.html">Skills</a>
+          <a href="project.html">Projects</a>
+          <a href="Memories.html">Memories</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+    
+      </header>
+    
+  <div class="container">
+    <h1 class="logo">Contact <span>Me</span></h1>
+    <div class="contact-wrapper">
+      <div class="contact-form">
+        <h3>------------------Get In Touch------------------ </h3>
+        <form action="sendmail.php" method="post">
+          <p>
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" autofocus>
+          </p>
+          <p>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" pattern="\d+">
+          </p>
+          <p>
+            <label for="">Subject:</label>
+            <input type="text" name="affair">
+          </p>
+          <p class="block">
+            <label for="message">Message</label>
+            <textarea name="message"rows="3"></textarea>
+          </p>
+          <p class="block">
+            <button type="submit">
+                Send
+            </button>
+          </p>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h4>My Location</h4>
+        <ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.482940312708!2d87.04181667506627!3d25.254334677674265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0481fd7d50f6d%3A0xbe75d3ff73e0373e!2sIndian%20Institute%20of%20Information%20Technology%20Bhagalpur!5e0!3m2!1sen!2sin!4v1689134378448!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <li><i class="fas fa-map-marker-alt" ></i href="">Janakinagar, Kodad, Suryapet, TS-508206 </li>
+          <li><i class="fas fa-phone"></i>+91-62816562600</li>
+          <li><i class="fas fa-envelope-open-text"></i>@website.com</li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

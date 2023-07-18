@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bharmavathu Balasai</title>
+  <style>
+
+
+
+    img {
+  --s: 350px;   /* the size of the image */
+  --b: 8px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: #0ef; /* the color */
+  
+  width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s)/2) solid #0009;
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+
+img {
+  border-radius: 50%;
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 50px;
+  place-content: center;
+  place-items: center;
+  background: #000;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 1rem 0%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    color:#fff;
+    font-weight: 600;
+    cursor: default;
+    text-decoration: none;
+  }
+  
+  .navbar a {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-left: 7rem;
+    transition: .3s;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+  color:#0ef;
+  }
+  
+  #menu-icon {
+    font-size: 3.6rem;
+    color: #fff;
+    display: none;
+  }
+
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  span{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+  }
+  span:hover{
+    color: #0ef;
+    box-shadow: 0 0 2rem color(#0ef);
+  }
+
+  </style>
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">BALASAI</a>
+    
+        <i class='bx bx-menu' id="menu-icon"></i>
+       
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="profile.html">Skills</a>
+          <a href="project.html">Projects</a>
+          <a href="Memories.html">Memories</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+    
+      </header>
+<!-- partial:index.partial.html -->
+<a href="https://www.iiitbh.ac.in/"><img src="images/iiitbh.jpeg" alt="a canyon" style="--g: 20px;--b:5px;--c:#0ef;" ><span>2020-24</span></a>
+<a href="https://goo.gl/maps/NXFKiZnVukT8QSK9A"><img src="images/vision 40.jpeg" alt="a canyon" style="--g: 20px;--b:5px;--c:#0ef;" ><span>2018-20</span></a>
+<a href="https://goo.gl/maps/Ge7D35HXyNXRbFNz9"><img src="images/globus.jpeg" alt="a canyon" style="--g: 20px;--b:5px;--c:#0ef;"><span>2018</span></a>
+
+  
+</body>
+</html>

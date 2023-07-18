@@ -1,0 +1,151 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef; 
+  }
+
+body
+{
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #000000;
+    background: var(--bg-color);
+    color: var(--text-color);
+   
+      
+}
+.fixed{
+    margin: 150px;
+    padding-top: 0;
+    padding: 0;
+    display: flex;
+}
+.down{
+    display: flex;
+    margin: 150px;
+    margin-top: 100px;
+    padding: 20px;
+    height: 5px;;
+}
+
+.box
+{
+    position: relative;
+    margin: 50px;
+}
+.box .text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.box .text h2
+{
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.box .text small
+{
+    font-size: 18px;
+    display: flex;
+}
+
+.circle
+{
+    width: 200px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle .points
+{
+    width: 5px;
+    height: 15px;
+    background: #0007;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-100px);
+    
+}
+.points.marked
+{
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+
+@keyframes glow
+{
+    0%
+    {
+        background: #0007;
+        box-shadow: none;
+    }
+    100%
+    {
+        background: var(--bgColor);
+        box-shadow: 0 0 10px var(--bgColor);
+    }
+}
+
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 1rem 0%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+    font-family: 'Poppins' sans-serif;
+  }
+  
+  .navbar a {
+    font-size: 2.0rem;
+    color: var(--text-color);
+    margin-left: 7rem;
+    transition: .3s;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+  color:var(--main-color);
+  }
+  
+  #menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+  }
+
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
